@@ -48,11 +48,16 @@ parseFloat(document.getElementById("dias").value)
 const meses =
 parseFloat(document.getElementById("meses").value)
 
-dias = meses * 30
+if(!meses || meses <= 0){
+alert("Completa los datos")
+return
+}
+
+dias = meses * 26
 
 }
 
-if(!salario || !dias){
+if(!salario || !dias || dias <= 0){
 
 alert("Completa los datos")
 return
