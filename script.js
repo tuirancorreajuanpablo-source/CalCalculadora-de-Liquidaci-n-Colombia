@@ -33,6 +33,7 @@ function calcular(){
 const salario =
 parseFloat(document.getElementById("salario").value)
 
+
 const modo =
 document.getElementById("modo").value
 
@@ -68,6 +69,7 @@ const prima = salario * dias / 360
 const cesantias = salario * dias / 360
 const intereses = cesantias * 0.12 * dias / 360
 const vacaciones = salario * dias / 720
+const salario_dia = salario / 30 
 
 const total =
 prima + cesantias + intereses + vacaciones
@@ -85,10 +87,15 @@ document.getElementById("vacaciones").innerText =
 formato(vacaciones)
 
 document.getElementById("total").innerText =
-formato(total)
+formato(cesantias + intereses + vacaciones)
 document.getElementById("total-con-prima").innerText =
-formato(total - prima)
+formato(total)
+
+document.getElementById("salario-dia").innerText =
+formato(salario_dia)
 
 document.getElementById("resultados").style.display="block"
+
+
 
 }
