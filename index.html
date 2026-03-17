@@ -10,17 +10,18 @@
 <link rel="stylesheet" href="styles.css">
 <!-- Incono -->
 <link rel="icon" type="image/jpeg" href="calculadora.jpg">
-
 </head>
 
 <body>
 
-<div class="card">
   
+
+<div class="card">
+
   <div style="text-align:center; margin-bottom:15px;">
     <img src="calculadora.jpg" alt="Calculadora" style="width:100px;">
   </div>
-  
+
 <h1>Calculadora para Liquidación Laboral en Colombia</h1>
 <p>Calcula tu liquidación laboral en Colombia de forma rápida y gratuita. Incluye prima, cesantías, intereses y vacaciones según tu salario y tiempo trabajado.</p>
 
@@ -54,8 +55,7 @@ No recuerdo los días (usar meses)
 <input id="meses" type="number" placeholder="Ej: 6">
 
 <small>
-🧾Los meses se convierten a días laborales
-(lunes a sábado, 26 días por mes)
+Si no recuerdas los días exactos, puedes usar meses. La calculadora asumirá que cada mes tiene 30 días para el cálculo de la liquidación.
 </small>
 
 </div>
@@ -65,6 +65,8 @@ Calcular liquidación
 </button>
 
 <div class="results" id="resultados">
+
+<p><strong>Salario diario:</strong> <span id="salario-dia"></span></p>
 
 <p><strong>Prima:</strong> <span id="prima"></span></p>
 
@@ -76,8 +78,8 @@ Calcular liquidación
 
 <hr>
 
-<p><strong>Total liquidación Con Prima Pagada En Mes de Vacaciones:</strong> <span id="total-con-prima"></span></p>
-<p><strong>Total liquidación Sin Prima Pagada:</strong> <span id="total"></span></p>
+<p><strong>Total liquidación Con Prima:</strong> <span id="total-con-prima"></span></p>
+<p><strong>Total liquidación Sin Prima:</strong> <span id="total"></span></p>
 
 </div>
 
